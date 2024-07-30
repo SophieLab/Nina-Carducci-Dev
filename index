@@ -1,173 +1,238 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <title>Portfolio de Nina Carducci - Photographe professionnel - Bordeaux</title>
+    <meta name="description" content="Explorez le portfolio d'un photographe professionnel à Bordeaux, spécialisé dans la captation d'événements. Services incluant retouche photo, création d'albums personnalisés et séances de shooting photo artistiques. Possibilité de déplacement en Île-de-France.">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Portfolio de Nina Carducci">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sophielab.github.io/Nina-Carducci-Dev/">
+    <meta property="og:title" content="Portfolio de Nina Carducci - Photographe professionnel - Bordeaux">
+    <meta property="og:description" content="Explorez le portfolio d'un photographe professionnel à Bordeaux, spécialisé dans la captation d'événements. Services incluant retouche photo, création d'albums personnalisés et séances de shooting photo artistiques. Possibilité de déplacement en Île-de-France.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/SophieLab/Nina-Carducci-Dev/master/assets/images/nina.webp">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ShinyHunting02">
+    <meta name="twitter:title" content="Portfolio de Nina Carducci - Photographe professionnel - Bordeaux">
+    <meta name="twitter:description" content="Explorez le portfolio d'un photographe professionnel à Bordeaux, spécialisé dans la captation d'événements. Services incluant retouche photo, création d'albums personnalisés et séances de shooting photo artistiques. Possibilité de déplacement en Île-de-France.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/SophieLab/Nina-Carducci-Dev/master/assets/images/nina.webp">
+    <meta name="twitter:url" content="https://sophielab.github.io/Nina-Carducci-Dev/">
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="tKtyzzwgUJ5R1IQemSeMJWJtDDACJFLEZTyviEebNNQ">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-    <title>Photographe Nina Carducci - Portfolio et Services</title>
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+
+    <!-- Balisage JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "image": "./assets/images/Nina_Carducci.webp",
+        "telephone": "+33-5-56-67-78-89",
+        "email": "nina.carducci@gmail.com",
+        "sameAs" : "https://www.instagram.com/ninacarducci.photo/?hl=fr",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68, Avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "addressCountry": "France",
+            "postalCode": "33200"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "lundi",
+                "mardi",
+                "mercredi",
+                "jeudi",
+                "vendredi"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+        },
+        "priceRange": "50€ - 400€"
+    }
+    </script>
 </head>
+
 <body>
 
-<!-- En-tête supérieur avec nom et menu de navigation -->
-<div class="top-header">
-    <h1 class="name">Nina Carducci</h1>
-    <div class="nav">   
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#gallery">Galerie</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-                <img src="assets/images/instagram.webp" alt="Profil Instagram de Nina Carducci" loading="lazy">
-            </a></li>
-        </ul>
-    </div>
-</div>
+    <!-- En-tête supérieur avec nom et menu de navigation -->
+    <header class="top-header">
+        <h1 class="name">Nina Carducci</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/instagram.webp" alt="Profil Instagram de Nina Carducci" loading="lazy">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Section du carrousel d'images -->
-<div id="header">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" aria-label="Carrousel d'images">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
+    <!-- Section du carrousel d'images -->
+    <section id="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" aria-label="Carrousel d'images">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Photo de paysage par Ryoji Iwata" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Portrait par Nicholas Green" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="Photo artistique par Edward Cisneros" loading="lazy">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Précédent">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Suivant">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Photo de paysage par Ryoji Iwata" loading="lazy">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Portrait par Nicholas Green" loading="lazy">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="Photo artistique par Edward Cisneros" loading="lazy">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Précédent">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Précédent</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Suivant">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Suivant</span>
-        </button>
-    </div>
-</div>
+    </section>
 
-<!-- Section "À propos" -->
-<div id="about">
-    <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="Photographe Nina Carducci" loading="lazy">
-    </div>
-    <div id="about-me">
-        <h2 class="about-me__title">À propos de moi</h2>
-        <p>Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-        <p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-    </div>
-</div>
+    <!-- Section "À propos" -->
+    <section id="about">
+        <div class="picture left">
+            <img src="./assets/images/nina.webp" alt="Photographe Nina Carducci" loading="lazy">
+        </div>
+        <div id="about-me">
+            <h2 class="about-me__title">À propos de moi</h2>
+            <p>Devenir photographe était une évidence pour moi. Capturer un moment, une émotion, une situation, un lieu, ou un éclat de lumière, c'est ce qui me motive.</p>
+            <p>Nous passons notre vie à chercher le bonheur, et une fois que nous le trouvons, nous voulons le célébrer en photo pour le partager avec nos proches ou pour le montrer au plus grand nombre.</p>
+            <p>Je vous offre la possibilité de capturer ces moments précieux avec ma perspective, mon approche et ma technique, pour immortaliser ces instants afin qu'ils vous apportent amour, bonheur, affection et lumière chaque fois que vous regarderez vos photos.</p>
+        </div>
+    </section>
 
-<!-- Section "Galerie" -->
-<div id="gallery">
-    <h2 class="title">Portfolio</h2>
-    <div class="container py-3">
-        <div class="gallery" style="display: none">
-            <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX.webp" alt="Photo de concert par Aaron Paul" loading="lazy"/>
-            <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Photo d'entreprise par Ali Morshedlou" loading="lazy"/>
-            <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Photo d'affaires par Jason Goodman" loading="lazy"/>
-            <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="Photo de mariage par Hannah Busing" loading="lazy"/>
-            <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="Portrait par Ade Tunji" loading="lazy"/>
-            <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="Photo de mariage par Jakob Owens" loading="lazy"/>
-            <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="Portrait par Nino Van Prattenburg" loading="lazy"/>
-            <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="Photo de concert par Austin Neill" loading="lazy"/>
-            <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos.webp" alt="Photo d'entreprise par Mateus Campos" loading="lazy"/>
+    <!-- Section "Galerie" -->
+    <section id="gallery">
+        <h2 class="title">Portfolio</h2>
+        <div class="container py-3">
+            <div class="gallery">
+                <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/salvatore-damico.webp" alt="Photo de concert par Salvatore Damico" loading="lazy">
+                <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/anshu-a.webp" alt="Portrait par Anshu A" loading="lazy">
+                <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jesse-ramirez.webp" alt="Photo de mariage par Jesse Ramirez" loading="lazy">
+            </div>
         </div>
-    </div>
-    <div class="quote">
-        <figure>
-            <blockquote>
-                <h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
-            </blockquote>
-            <figcaption class="quote__author">- Richard Avedon</figcaption>
-        </figure>
-    </div>
-</div>
+    </section>
 
-<!-- Section "Services" -->
-<div id="services">
-    <h2 class="title">Mes services</h2>
-    <div class="container">
-        <div class="service">
-            <div class="service__description">
-                <h3>Shooting photo</h3>
-                <p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+    <!-- Section "Services" -->
+    <section id="services">
+        <h2 class="title">Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <div class="service__image">
+                    <img src="./assets/images/services/portrait.webp" alt="Séance photo portrait" loading="lazy">
+                </div>
+                <div class="service__description">
+                    <h3>Séances Photo</h3>
+                    <p>Photographie de portrait, événements, mariages, et plus encore. Des séances sur mesure pour capturer vos moments précieux.</p>
+                </div>
+                <div class="service__price">
+                    <h4>150€ pour une séance de 2 heures</h4>
+                    <span>Inclus 30 photos retouchées</span>
+                </div>
             </div>
-            <div class="service__price">
-                <h4>350€/demi-journée</h4>
-                <span>Matériel, déplacement inclus</span>
+            <div class="service">
+                <div class="service__image">
+                    <img src="./assets/images/services/retouche.webp" alt="Retouche photo" loading="lazy">
+                </div>
+                <div class="service__description">
+                    <h3>Retouche Photo</h3>
+                    <p>Services professionnels de retouche pour améliorer vos photos et les rendre parfaites.</p>
+                </div>
+                <div class="service__price">
+                    <h4>50€ par photo</h4>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service__image">
+                    <img src="./assets/images/services/album.webp" alt="Album photo personnalisé" loading="lazy">
+                </div>
+                <div class="service__description">
+                    <h3>Albums Photo</h3>
+                    <p>Albums photo personnalisés de moments précieux à partager avec vos proches ou clients.</p>
+                </div>
+                <div class="service__price">
+                    <h4>400€ album format A4</h4>
+                    <span>30 pages recto-verso</span>
+                </div>
             </div>
         </div>
-        <div class="service">
-            <div class="service__description">
-                <h3>Retouches</h3>
-                <p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficiez d’un rendu optimal pour vos publications</p>
-            </div>
-            <div class="service__price">
-                <h4>50€/photo</h4>
-                <span>2 AR par photo</span>
-            </div>
+        <div class="quote">
+            <figure>
+                <blockquote>
+                    <h1 class="quote__text">Subconsciemment, je pense que je cherche toujours un regard, une expression, une caractéristique, ou un sentiment de nostalgie capable de définir, ou plus précisément, de révéler la vie.</h1>
+                </blockquote>
+                <figcaption class="quote__author">- Richard Avedon</figcaption>
+            </figure>
         </div>
-        <div class="service">
-            <div class="service__description">
-                <h3>Album photos</h3>
-                <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-            </div>
-            <div class="service__price">
-                <h4>400€ album A4</h4>
-                <span>30 pages recto/verso</span>
-            </div>
-        </div>
-    </div>
-</div>
+    </section>
 
-<!-- Section de citation -->
-<div class="quote">
-    <figure>
-        <blockquote>
-            <h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-    </figure>
-</div>
+    <!-- Section "Contact" -->
+    <section id="contact">
+        <div class="container">
+            <div class="form-container">
+                <h3>Vous avez une question ? Besoin d'un devis ?</h3>
+                <p>N'hésitez pas à me contacter ! Je vous répondrai dans les 24 heures.</p>
+                <form action="" method="post">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <div class="picture right">
+                <img src="./assets/images/camera.webp" alt="Appareil photo" loading="lazy">
+            </div>
+        </div>
+    </section>
 
-<!-- Section "Contact" -->
-<div id="contact">
-    <div class="container">
-        <div class="form-container">
-            <h2>Une question ? Une demande de devis ?</h2>
-            <p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
-            <form action="" method="post">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                <input type="submit" value="Envoyer"/>
-            </form>
-        </div>
-        <div class="picture right">
-            <img src="./assets/images/camera.webp" alt="Appareil photo" loading="lazy">
-        </div>
-    </div>
-</div>
+    <!-- Pied de page avec copyright -->
+    <footer>
+        <p>&copy; 2024 Nina Carducci. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Chargement des scripts JavaScript avec les attributs async et defer pour optimiser les performances -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/maugallery.min.js" defer></script>
+    <script src="./assets/scripts.min.js" defer></script>
 
 </body>
+
 </html>
