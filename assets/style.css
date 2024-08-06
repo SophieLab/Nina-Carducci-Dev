@@ -24,8 +24,12 @@ body {
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
-
-
+/* Style de texte en contraste */
+.contraste-eleve {
+	color: #fff; /* Couleur du texte */
+	background-color: #000; /* Couleur de l'arrière-plan */
+  }
+  
 /* Styles pour l'en-tête supérieur */
 .top-header {
 	background-color: white;
